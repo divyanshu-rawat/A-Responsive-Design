@@ -3,16 +3,27 @@
     color: indigo;
 }
 .jumbotron {
+
     width: 100%;
-	background: 
+	  background: url("../images/rsz_1rsz_burj_khalifa_dubai_photos_hd_wallpaper_160216085830.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center; 
     height: 800px;
     padding: 0;
-    margin-top: 52px;
+    margin-top: 2%;
 }
 .jumbotron-content {
-	color: white;
+	  color: white;
     opacity: .4;
 }
+
+.my_img
+{
+  width: 250px; 
+  height:200px;
+}
+
 .lead {
 	font-style: italic;
     font-weight: bolder;
@@ -65,6 +76,7 @@
     height: 195px;
     font-style: oblique;
 }
+
 .blackbox a {
 	color: white;
     background: black;
