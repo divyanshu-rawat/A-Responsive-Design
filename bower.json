@@ -1,0 +1,22 @@
+{
+  "name": "Twitter-Bootstrap-Responsive-Design",
+  "homepage": "https://github.com/divyanshu-rawat/Twitter-Bootstrap-Responsive-Design",
+  "authors": [
+    "divyanshu <divyanshu.r46956@gmail.com>"
+  ],
+  "description": "A sample test template !",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
