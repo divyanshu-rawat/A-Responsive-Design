@@ -1,174 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Contact - Clean & Clear</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <!-- Your custom styles -->
-        <link href="css/contact.css" rel="stylesheet">
+<head>
 
-        <!--Include JQuery -->
-        <script src="JQuery/jquery.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap JavaScript -->
-        <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 
-        <script>
-            $(document).ready(function() {
-                $('#address').popover('animation')
-            });
-        </script>
-    </head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top ">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="sampleproject.html">
-        <img src="images/logo.png" alt="clean & clear">        </a>
-    </div>
+    <link href="css/contact.css" rel="stylesheet">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li ><a href="sampleproject.html"><span class="glyphicon glyphicon-home"></span> Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i>Visit <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">New York</a></li>
-            <li><a href="#">Tokyo</a></li>
-            <li><a href="#">Paris</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">New Mexico</a></li>
-          </ul>    
-        </li>
-            <li><a href="#">Blog</a></li>
-            <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-        <div class="container">   
-            <div class="row padtop">
-                <div class="inner-page col-md-8">
-                    <div id="contact" class="well">
-                        <iframe class="gmap" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="710px"  padding-top="0px"src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=89+west+main+st+merrimac+ma+01860&amp;aq=&amp;sll=42.036922,-71.683501&amp;sspn=1.97864,4.702148&amp;ie=UTF8&amp;hq=&amp;hnear=89+W+Main+St,+Merrimac,+Massachusetts+01860&amp;t=m&amp;z=14&amp;ll=42.825562,-71.01797&amp;output=embed"></iframe><br />
-                        <br><br>
-                        <button id="address" href="#" class="btn btn-lg btn-default" data-toggle="popover" title="Address" data-content="89 West Main st, Merrimac MA 01860" role="button">Get Address</button>
-                        <br><br>
-                        <h3>Contact Us</h3>
-                        <p>Please use the form below to contact us</p>
-                        <form role="form">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Name</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Message</label>
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
-                            <button type="submit" class="btn btn-default">Send</button>
-                        </form>
-                    </div>
-                </div><!-- /. col-md-8 -->
 
-                <!-- Sidebar -->
-                <div class="col-md-4">   
-                    <div class="list-group list-group">
-                        <a href="index.html" class="list-group-item">Home</a>
-                        <a href="about.html" class="list-group-item">About</a>
-                        <a href="innovate.html" class="list-group-item">Innovate</a>
-                        <a href="#" class="list-group-item">Blog</a>
-                        <a href="contact.html" class="list-group-item active">Contact Us</a>
-                    </div><!-- /. list-group -->
-                    <div class="grey-list list-group">
-                        <a href="#" class="list-group-item active">
-                            <h4 class="list-group-item-heading">List group item heading</h4>
-                            <p class="list-group-item-text">Have A Nice Day!</p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">List group item heading</h4>
-                            <p class="list-group-item-text">Have A Nice Day!</p>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <h4 class="list-group-item-heading">List group item heading</h4>
-                            <p class="list-group-item-text">Have A Nice Day!</p>
-                        </a>
-                    </div><!-- /. list-group -->
-                </div><!-- /. col-md-4 -->           
-            </div> <!-- /row -->  
-        </div> <!-- /container -->
-        <footer>
-                 <footer class="row-footer">
-      <div class="container">
-         <div class="row">
-            <div class="col-sm-2 col-sm-offset-1 col-xs-offset-1 col-xs-5 col-lg-2 col-lg-offset-1">
-               <h5 class="default">Links</h5>
-               <ul class="list-unstyled">
-                  <li><a href="sampleproject.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-               </ul>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                     FunTop !
             </div>
-            <div class="col-md-5 col-sm-5 col-lg-5 col-xs-6">
-               <h5 class="default">Our Address</h5>
-               <address>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"></span> About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i>Visit <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New York</a>
+                            </li>
+                            <li><a href="#">Tokyo</a>
+                            </li>
+                            <li><a href="#">Paris</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">New Mexico</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+                    </li>
+                    <li class="active"><a href="contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <li><a href="#">Login</a>
+                    </li>
+                    <li><a href="#">Register</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row padtop">
+            <div class="inner-page col-md-8">
+                <div id="contact" class="well">
+
+                    <iframe class="gmap" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="710px" padding-top="0px" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=89+west+main+st+merrimac+ma+01860&amp;aq=&amp;sll=42.036922,-71.683501&amp;sspn=1.97864,4.702148&amp;ie=UTF8&amp;hq=&amp;hnear=89+W+Main+St,+Merrimac,+Massachusetts+01860&amp;t=m&amp;z=14&amp;ll=42.825562,-71.01797&amp;output=embed"></iframe>
+
+                    <br />
+                    <br>
+                    <br>
+                    <button id="address" href="#" class="btn btn-lg btn-default" data-toggle="popover" title="Address" data-content="89 West Main st, Merrimac MA 01860" role="button">Get Address</button>
+                    <br>
+                    <br>
+
+                    <h3>Contact Us</h3>
+                    <p>Please use the form below to contact us</p>
+
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /. col-md-8 -->
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="list-group list-group">
+                    <a href="index.html" class="list-group-item">Home</a>
+                    <a href="about.html" class="list-group-item">About</a>
+                    <a href="innovate.html" class="list-group-item">Innovate</a>
+                    <a href="#" class="list-group-item">Blog</a>
+                    <a href="contact.html" class="list-group-item active">Contact Us</a>
+                </div>
+                <!-- /. list-group -->
+                <div class="grey-list list-group">
+                    <a href="#" class="list-group-item active">
+                        <p class="list-group-item-text">Have A Nice Day!</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <p class="list-group-item-text">Have A Nice Day!</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <p class="list-group-item-text">Have A Nice Day!</p>
+                    </a>
+                </div>
+                <!-- /. list-group -->
+            </div>
+            <!-- /. col-md-4 -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+    <footer>
+        <footer class="row-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-1 col-xs-offset-1 col-xs-5 col-lg-2 col-lg-offset-1">
+                        <h5 class="default">Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
+                            <li><a href="#">Blog</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-sm-5 col-lg-5 col-xs-6">
+                        <h5 class="default">Our Address</h5>
+                        <address>
                        89 West Main st<br>
                        Merrimac MA 01860<br>          
                       <i class="fa fa-fax"></i>: +7300434869<br>
                        <i class="fa fa-envelope-o"></i>:<a href="mailto:divyanshu.r46956@gmail.com"> divyanshu.r46956@gmail.com</a>
                    </address>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
+
+                        <ul class="list-inline social-buttons">
+                            <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li> <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align="center" style="color:grey">© Copyright 2015 Divyanshu Rawat</p>
+                </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
-               
-                 <ul class="list-inline social-buttons">
-                  <li><a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a></li>
-                  <li><a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a></li>
-                 <li> <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                  <li><a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a></li>
-                    </ul>
-               
             </div>
-               
-            </div>
-            <div class="col-md-12 col-xs-12">
-            <p style="padding:10px;"></p>
-            <p align="center" style="color:grey">© Copyright 2015 Divyanshu Rawat</p>
-         </div>
-         </div>
-      </div>
-   </footer>
         </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
