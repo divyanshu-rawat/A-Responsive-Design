@@ -1,12 +1,21 @@
-> A responsive :boat:  theme based on travelling to various places :airplane: !
+## Demo 
 
+> [Live Demo Here !](https://myresponsiveapp.herokuapp.com/)
 
-### Demo
-> https://myresponsiveapp.herokuapp.com/
+##
+
+### For Any Query Ping Me
+
+[![Join the chat](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/divyanshu001)
+
+##
 
 ### Description 
+
 A template designed Using Front end Library and Frameworks.
 Created An sleek, intuitive, and powerful mobile first front-end template
+
+##
 
 ### Installation Instructions :grey_exclamation:
 
@@ -16,15 +25,34 @@ Created An sleek, intuitive, and powerful mobile first front-end template
 
 * launch index.html file :exclamation:
 
+##
+
 ### Package Manager Used 
 
 * Bower — A package manager for the web.
+
+##
 
 ### Dependencies
 
 * "bootstrap": "~3.3.7" "jquery": "~3.1.1",
   "font-awesome": "~4.7.0",  
 
+##
+
+### Contributing
+
+1. Create your **_branch_**: `git checkout -b my-new-feature`
+
+2. **_Commit_** your changes: `git commit -m 'Add some feature'`
+
+3. **_Push_** to the branch: `git push origin my-new-feature`
+
+4. Send a **Pull Request**
+
+5. **_Enjoy!_**
+
+##
 
 ### Example
 
